@@ -4,48 +4,73 @@ void checkbuttonACstate() {
     delay(150);
     ButtonACstate = !ButtonACstate; //state start in 0
     if (ButtonACstate == LOW) {
+//        display.clearDisplay();
+//        display.setTextSize(1);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0,0);
+//        display.print("Sess Time");
+//        display.setTextColor(BLACK,WHITE);
+//        display.setCursor(1, 9);
+//        display.print((String)"Hrs:"+SessionLengthHours);
+//        display.setTextColor(WHITE);
+//        display.setCursor(50, 9);
+//        display.print((String)"Min:"+SessionLengthMinutes);
+//        display.setCursor(0, 20);
+//        display.print("PRESS:");
+//        display.setCursor(5, 29);
+//        display.print("A(+) B(-)");
+//        display.setCursor(5, 38);
+//        display.print("C+A for Hrs or Min");
+//        display.setCursor(5, 47);
+//        display.print("C+B for OK");
+//        display.display();
+        
         display.clearDisplay();
-        display.setTextSize(1);
+        display.setTextSize(2);
         display.setTextColor(WHITE);
         display.setCursor(0,0);
-        display.print("Session Length");
+        display.print("Sess Time");
         display.setTextColor(BLACK,WHITE);
-        display.setCursor(1, 9);
+        display.setCursor(0, 20);
         display.print((String)"Hrs:"+SessionLengthHours);
         display.setTextColor(WHITE);
-        display.setCursor(50, 9);
+        display.setCursor(0, 40);
         display.print((String)"Min:"+SessionLengthMinutes);
-        display.setCursor(0, 20);
-        display.print("PRESS:");
-        display.setCursor(5, 29);
-        display.print("A(+) B(-)");
-        display.setCursor(5, 38);
-        display.print("C+A for Hrs or Min");
-        display.setCursor(5, 47);
-        display.print("C+B for OK");
         display.display();
     }
 
     if (ButtonACstate == HIGH) {
+//        display.clearDisplay();
+//        display.setTextSize(1);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0,0);
+//        display.print("Session Length");
+//        display.setCursor(1, 9);
+//        display.print((String)"Hrs:"+SessionLengthHours);
+//        display.setTextColor(BLACK,WHITE);
+//        display.setCursor(50, 9);
+//        display.print((String)"Min:"+SessionLengthMinutes);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0, 20);
+//        display.print("PRESS:");
+//        display.setCursor(5, 29);
+//        display.print("A(+) B(-)");
+//        display.setCursor(5, 38);
+//        display.print("C+A for Hrs or Min");
+//        display.setCursor(5, 47);
+//        display.print("C+B for OK");
+//        display.display();
+
         display.clearDisplay();
-        display.setTextSize(1);
+        display.setTextSize(2);
         display.setTextColor(WHITE);
         display.setCursor(0,0);
-        display.print("Session Length");
-        display.setCursor(1, 9);
+        display.print("Sess Time");
+        display.setCursor(0, 20);
         display.print((String)"Hrs:"+SessionLengthHours);
         display.setTextColor(BLACK,WHITE);
-        display.setCursor(50, 9);
+        display.setCursor(0, 40);
         display.print((String)"Min:"+SessionLengthMinutes);
-        display.setTextColor(WHITE);
-        display.setCursor(0, 20);
-        display.print("PRESS:");
-        display.setCursor(5, 29);
-        display.print("A(+) B(-)");
-        display.setCursor(5, 38);
-        display.print("C+A for Hrs or Min");
-        display.setCursor(5, 47);
-        display.print("C+B for OK");
         display.display();
     }
   }
@@ -54,26 +79,39 @@ void checkbuttonACstate() {
 
 void Timervalues(){
  
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(0,0);
-  display.print("Session Length");
-  display.setTextColor(BLACK,WHITE);
-  display.setCursor(1, 9);
-  display.print((String)"Hrs:"+SessionLengthHours);
-  display.setTextColor(WHITE);
-  display.setCursor(50, 9);
-  display.print((String)"Min:"+SessionLengthMinutes);
-  display.setCursor(0, 20);
-  display.print("PRESS:");
-  display.setCursor(5, 29);
-  display.print("A(+) B(-)");
-  display.setCursor(5, 38);
-  display.print("C+A for Hrs or Min");
-  display.setCursor(5, 47);
-  display.print("C+B for OK");
-  display.display();
+//  display.clearDisplay();
+//  display.setTextSize(1);
+//  display.setTextColor(WHITE);
+//  display.setCursor(0,0);
+//  display.print("Session Length");
+//  display.setTextColor(BLACK,WHITE);
+//  display.setCursor(1, 9);
+//  display.print((String)"Hrs:"+SessionLengthHours);
+//  display.setTextColor(WHITE);
+//  display.setCursor(50, 9);
+//  display.print((String)"Min:"+SessionLengthMinutes);
+//  display.setCursor(0, 20);
+//  display.print("PRESS:");
+//  display.setCursor(5, 29);
+//  display.print("A(+) B(-)");
+//  display.setCursor(5, 38);
+//  display.print("C+A for Hrs or Min");
+//  display.setCursor(5, 47);
+//  display.print("C+B for OK");
+//  display.display();
+
+        display.clearDisplay();
+        display.setTextSize(2);
+        display.setTextColor(WHITE);
+        display.setCursor(0,0);
+        display.print("Sess Time");
+        display.setTextColor(BLACK,WHITE);
+        display.setCursor(0, 20);
+        display.print((String)"Hrs:"+SessionLengthHours);
+        display.setTextColor(WHITE);
+        display.setCursor(0, 40);
+        display.print((String)"Min:"+SessionLengthMinutes);
+        display.display();
 
 
   //while ((digitalRead(BB) == HIGH) && (digitalRead(BC) == HIGH)) {   // select Active session Length time loop
@@ -94,27 +132,39 @@ void Timervalues(){
         if ( SessionLengthHours >= 24) {
           SessionLengthHours = 24; 
         }
+//        display.clearDisplay();
+//        display.setTextSize(1);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0,0);
+//        display.print("Session Length");
+//        display.setTextColor(BLACK,WHITE);
+//        display.setCursor(1, 9);
+//        display.print((String)"Hrs:"+SessionLengthHours);
+//        display.setTextColor(WHITE);
+//        display.setCursor(50, 9);
+//        display.print((String)"Min:"+SessionLengthMinutes);
+//        display.setCursor(0, 20);
+//        display.print("PRESS:");
+//        display.setCursor(5, 29);
+//        display.print("A(+) B(-)");
+//        display.setCursor(5, 38);
+//        display.print("C+A for Hrs or Min");
+//        display.setCursor(5, 47);
+//        display.print("C+B for OK");
+//        display.display();
+        
         display.clearDisplay();
-        display.setTextSize(1);
+        display.setTextSize(2);
         display.setTextColor(WHITE);
         display.setCursor(0,0);
-        display.print("Session Length");
+        display.print("Sess Time");
         display.setTextColor(BLACK,WHITE);
-        display.setCursor(1, 9);
+        display.setCursor(0, 20);
         display.print((String)"Hrs:"+SessionLengthHours);
         display.setTextColor(WHITE);
-        display.setCursor(50, 9);
+        display.setCursor(0, 40);
         display.print((String)"Min:"+SessionLengthMinutes);
-        display.setCursor(0, 20);
-        display.print("PRESS:");
-        display.setCursor(5, 29);
-        display.print("A(+) B(-)");
-        display.setCursor(5, 38);
-        display.print("C+A for Hrs or Min");
-        display.setCursor(5, 47);
-        display.print("C+B for OK");
         display.display();
-        // putt a maximum value here hours
         
       }
       checkbuttonACstate();
@@ -123,25 +173,38 @@ void Timervalues(){
         if (SessionLengthHours == 4294967295) {
           SessionLengthHours = 0;
         }
+//        display.clearDisplay();
+//        display.setTextSize(1);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0,0);
+//        display.print("Session Length");
+//        display.setTextColor(BLACK,WHITE);
+//        display.setCursor(1, 9);
+//        display.print((String)"Hrs:"+SessionLengthHours);
+//        display.setTextColor(WHITE);
+//        display.setCursor(50, 9);
+//        display.print((String)"Min:"+SessionLengthMinutes);
+//        display.setCursor(0, 20);
+//        display.print("PRESS:");
+//        display.setCursor(5, 29);
+//        display.print("A(+) B(-)");
+//        display.setCursor(5, 38);
+//        display.print("C+A for Hrs or Min");
+//        display.setCursor(5, 47);
+//        display.print("C+B for OK");
+//        display.display();
+
         display.clearDisplay();
-        display.setTextSize(1);
+        display.setTextSize(2);
         display.setTextColor(WHITE);
         display.setCursor(0,0);
-        display.print("Session Length");
+        display.print("Sess Time");
         display.setTextColor(BLACK,WHITE);
-        display.setCursor(1, 9);
+        display.setCursor(0, 20);
         display.print((String)"Hrs:"+SessionLengthHours);
         display.setTextColor(WHITE);
-        display.setCursor(50, 9);
+        display.setCursor(0, 40);
         display.print((String)"Min:"+SessionLengthMinutes);
-        display.setCursor(0, 20);
-        display.print("PRESS:");
-        display.setCursor(5, 29);
-        display.print("A(+) B(-)");
-        display.setCursor(5, 38);
-        display.print("C+A for Hrs or Min");
-        display.setCursor(5, 47);
-        display.print("C+B for OK");
         display.display();
         
       }
@@ -163,25 +226,37 @@ void Timervalues(){
         if ( SessionLengthMinutes >= 60) {
           SessionLengthMinutes = 60;
         }
+//        display.clearDisplay();
+//        display.setTextSize(1);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0,0);
+//        display.print("Session Length");
+//        display.setCursor(1, 9);
+//        display.print((String)"Hrs:"+SessionLengthHours);
+//        display.setTextColor(BLACK,WHITE);
+//        display.setCursor(50, 9);
+//        display.print((String)"Min:"+SessionLengthMinutes);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0, 20);
+//        display.print("PRESS:");
+//        display.setCursor(5, 29);
+//        display.print("A(+) B(-)");
+//        display.setCursor(5, 38);
+//        display.print("C+A for Hrs or Min");
+//        display.setCursor(5, 47);
+//        display.print("C+B for OK");
+//        display.display();
+
         display.clearDisplay();
-        display.setTextSize(1);
+        display.setTextSize(2);
         display.setTextColor(WHITE);
         display.setCursor(0,0);
-        display.print("Session Length");
-        display.setCursor(1, 9);
+        display.print("Sess Time");
+        display.setCursor(0, 20);
         display.print((String)"Hrs:"+SessionLengthHours);
         display.setTextColor(BLACK,WHITE);
-        display.setCursor(50, 9);
+        display.setCursor(0, 40);
         display.print((String)"Min:"+SessionLengthMinutes);
-        display.setTextColor(WHITE);
-        display.setCursor(0, 20);
-        display.print("PRESS:");
-        display.setCursor(5, 29);
-        display.print("A(+) B(-)");
-        display.setCursor(5, 38);
-        display.print("C+A for Hrs or Min");
-        display.setCursor(5, 47);
-        display.print("C+B for OK");
         display.display();
 
       }
@@ -193,28 +268,38 @@ void Timervalues(){
         if ( SessionLengthMinutes == 4294967295) {
           SessionLengthMinutes = 0;
         }
+//        display.clearDisplay();
+//        display.setTextSize(1);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0,0);
+//        display.print("Session Length");
+//        display.setCursor(1, 9);
+//        display.print((String)"Hrs:"+SessionLengthHours);
+//        display.setTextColor(BLACK,WHITE);
+//        display.setCursor(50, 9);
+//        display.print((String)"Min:"+SessionLengthMinutes);
+//        display.setTextColor(WHITE);
+//        display.setCursor(0, 20);
+//        display.print("PRESS:");
+//        display.setCursor(5, 29);
+//        display.print("A(+) B(-)");
+//        display.setCursor(5, 38);
+//        display.print("C+A for Hrs or Min");
+//        display.setCursor(5, 47);
+//        display.print("C+B for OK");
+//        display.display();       
+
         display.clearDisplay();
-        display.setTextSize(1);
+        display.setTextSize(2);
         display.setTextColor(WHITE);
         display.setCursor(0,0);
-        display.print("Session Length");
-        display.setCursor(1, 9);
+        display.print("Sess Time");
+        display.setCursor(0, 20);
         display.print((String)"Hrs:"+SessionLengthHours);
         display.setTextColor(BLACK,WHITE);
-        display.setCursor(50, 9);
+        display.setCursor(0, 40);
         display.print((String)"Min:"+SessionLengthMinutes);
-        display.setTextColor(WHITE);
-        display.setCursor(0, 20);
-        display.print("PRESS:");
-        display.setCursor(5, 29);
-        display.print("A(+) B(-)");
-        display.setCursor(5, 38);
-        display.print("C+A for Hrs or Min");
-        display.setCursor(5, 47);
-        display.print("C+B for OK");
         display.display();
-        
-        
       }
       checkbuttonACstate();
 

@@ -73,7 +73,7 @@ void luxtempRead(void)
   //Serial.print(F("Visible: ")); Serial.print(full - ir); Serial.print(F("  "));
   //Serial.print(F("Lux: ")); Serial.println(tsl.calculateLux(full, ir), 6);
   temp=sensor.readTemperature();
-  lux=tsl.calculateLux(full, ir);
+  lux=(tsl.calculateLux(full, ir)*G);
   Serial.print(temp,2);
   Serial.print(",");
   Serial.println(lux,2);

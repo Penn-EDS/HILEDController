@@ -37,7 +37,10 @@ unsigned long SessionLengthHours = 0;
 unsigned long SessionLengthInMiliseconds = 0;
 
 float temp=0.0;
+float MaxTemp=40.00;
 float lux=0.0;
+float G=2.0; // Gain correction factor Aproximatelly by 2 if perpendicular to photons and by 3 if it is parallel to photons. Correction for International Light device,  Model IL1400A. 
+//This is number was a quick aproximation. DAta need be collected to find the exact number. The Number should be closer to 2.1695 if sensor is looking the panel. 
   
 void setup() {
   
@@ -188,7 +191,7 @@ void loop() {
   display.display();
   myFile.println((String) millis()+","+temp+","+lux);
 
-  if(temp>25.00){
+  if(temp>MaxTemp){
     digitalWrite(RELAY,LOW);
     display.clearDisplay();
     display.setTextSize(2);
